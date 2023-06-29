@@ -1,0 +1,152 @@
+.hero {
+  background: url('../img/sub-hero-img.jpg');
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  height: 30vh;
+  background: linear-gradient(270deg, rgba(1, 1, 1, 0.4), transparent);
+}
+
+.section-title-container {
+  padding: 100px 0 30px;
+  margin: 0 auto;
+}
+
+.section-title-container img {
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 55px;
+  text-align: center;
+  color: #706c6c;
+}
+
+form {
+  padding: 8% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'HCRDotum';
+}
+
+form a {
+  /* width: 90%; */
+}
+
+.form-wrapper {
+  max-width: 400px;
+  /* width: 90%; */
+  margin: 100px auto 160px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: rgba(49, 102, 18, 0.1);
+  padding: 20px 0 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(97, 128, 97);
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  font-family: 'HCRDotum';
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+hr {
+  margin: 20px;
+  width: 100%;
+  background: #ccc;
+  height: 1px;
+  border: 0;
+}
+
+.search span:first-child,
+.search span:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form span:nth-child(2)::after {
+  content: '';
+  padding: 0.5px;
+  height: 7px;
+  background-color: #aaa;
+  margin: 0 10px;
+}
+
+form .search {
+  margin-bottom: 20px;
+}
+
+button.join {
+  background-color: #444;
+}
+
+.sns-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sns-login a:hover {
+  opacity: 85%;
+}
+
+#naver_id_login img {
+  width: 100%;
+}
+
+.top-btn-wrapper {
+  display: none;
+}
+
+.reservation-btn {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+/* @media (max-width: 500px) {
+  h2 {
+    font-size: 22px;
+  }
+} */

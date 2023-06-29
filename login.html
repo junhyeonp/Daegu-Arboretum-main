@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대구수목원 로그인</title>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+    charset="utf-8"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <div class="top-btn-wrapper">
+    <img src="./img/top-btn.png" width="90px" alt="" />
+    <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
+  </div>
+
+  <!-- reservation btn -->
+  <a class="reservation-btn" href="./reservation.html">
+    <img src="./img/reservation-btn.png" alt="" />
+  </a>
+
+  <div class="header-wrapper">
+    <div class="gnb">
+      <div class="login"><a href="./login.html">로그인</a></div>
+      <div class="eng"><a href="#">ENGLISH</a></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">
+        <a class="home-link" href="./index.html">
+          <img src="./img/logo.PNG" class="logo-img" alt="" />
+          <div class="logo-title">
+            <h1>대구수목원</h1>
+            <p>Daegu National Arboretum</p>
+          </div>
+        </a>
+        <ul class="menu">
+          <li>수목원 안내</li>
+          <li>산림문화전시관</li>
+          <li>교육/연구 내용</li>
+          <li>목재문화체험장</li>
+          <li>나무병원</li>
+          <li>양묘화훼</li>
+          <li><a href="./reservation.html">견학/체험</a></li>
+        </ul>
+        <div class="toggleBtn"></div>
+        <div onclick="history.back();" class="page_cover"></div>
+
+        <div id="toggle-menu">
+          <ul class="nav">
+            <li>
+              <a>수목원 안내</a>
+              <ul class="sub_mobile">
+                <li><a href="#">수목원이란?</a></li>
+                <li><a href="#">공원과의 차이점</a></li>
+                <li><a href="#">조성목적 및 연혁</a></li>
+                <li><a href="#">조성과정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>산림문화전시관</a>
+              <ul class="sub_mobile">
+                <li><a href="#">개요</a></li>
+                <li><a href="#">전시실안내</a></li>
+                <li><a href="#">전시실배치도</a></li>
+              </ul>
+            </li>
+            <li><a href="#">교육/연구내용</a></li>
+            <li>
+              <a>목재문화체험장</a>
+              <ul class="sub_mobile">
+                <li><a href="#">체험관소개</a></li>
+                <li><a href="#">체험프로그램 안내</a></li>
+                <li><a href="#">시설안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#">나무병원</a></li>
+            <li>
+              <a>양묘화훼</a>
+              <ul class="sub_mobile">
+                <li>
+                  <a>양묘</a>
+                  <ol>
+                    <li><a>생산목적 및 현황</a></li>
+                    <li><a>생산수종</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a>화훼</a>
+                  <ol>
+                    <li><a href="#">생산 목적 및 현황</a></li>
+                    <li><a href="#">계절별 생산수종</a></li>
+                    <li><a href="#">국화전시회</a></li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div onclick="history.back();" class="close"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero"></section>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="section-title-container">
+      <img src="./img/leaf_2.png" width="50px" alt="" />
+      <h2>로그인</h2>
+    </div>
+    <div class="form-wrapper">
+      <form action="">
+        <input type="text" placeholder=" 아이디" />
+        <input type="text" placeholder=" 비밀번호" />
+        <button>로그인</button>
+
+        <div class="sns-login">
+          <a href="javascript:kakaoLogin();"><img src="./img/kakao_login.png" width="231.25px"
+              style="text-align: center" /></a>
+          <!-- 카카오 로그인 API를 사용하기 위한 자바스크립트 소스 불러오기-->
+
+          <!-- 네이버 로그인 버튼 노출 영역 -->
+          <div id="naver_id_login"></div>
+        </div>
+
+        <hr />
+
+        <div class="search">
+          <span>아이디 찾기</span>
+          <span></span>
+          <span>비밀번호 찾기</span>
+        </div>
+
+        <button class="join">회원가입</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div id="aLine">
+        <div id="footer_fline">
+          <ul>
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#" class="pc">저작권정책</a></li>
+            <li><a href="#" class="pc">행정서비스 헌장</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+            <li><a href="#">관련기관</a></li>
+            <li><a href="#">전화번호(FAX)안내</a></li>
+            <li><a href="#" class="pc">공공앱소개</a></li>
+            <li><a href="#" class="pc">배너모음</a></li>
+            <li><a href="#" class="pc">XML</a></li>
+          </ul>
+        </div>
+        <div id="footer_sline">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-solid fa-blog"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <span><img src="./img/img_120.png" alt="120" width="100px" /></span>
+        </div>
+      </div>
+
+      <div id="bLine">
+        <div id="footer_tline">
+          <div><img src="./img/logo_footer.png" alt="logo_footer" /></div>
+          <div class="footer-adress">
+            <p>
+              동인청사 : (우 41911) 대구광역시 중구 공평로 88 /산격청사 : (우
+              41542) 대구광역시 북구 연암로 40 /전화번호 : 053)120,
+              053)803-0114
+            </p>
+            <p class="copyright">
+              © DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+
+        <div id="footer_foline">
+          <span> <img src="./img/img_120.png" alt="120" /> </span>
+          <span> <img src="./img/img_wa.png" alt="wa" /> </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    //JavaScript 키 : 56d51771a4a9d45bce2747686afe4f96
+    window.Kakao.init('604450d7333437c8244b0af60425b510'); // API Key 입력
+
+    function kakaoLogin() {
+      // 함수 선언
+      window.Kakao.Auth.login({
+        // 카카오 연동 로그인을 위한 인증, 로그인 될 때 실행됨
+        scope: 'profile_nickname, account_email, gender', // 가져올 카카오 로그인 정보 중 동의항목 ID 설정
+        success: function (authobj) {
+          console.log(authobj); // 받아온 오브젝트 데이터를 콘솔로 출력해보기
+          window.Kakao.API.request({
+            // 로그인 된 상태에서 유저의 로그인 정보(이메일, 닉네임 등) 값을 요청해서 받아오기
+            url: '/v2/user/me', //로그인 한 사용자의 정보가 있는 url 지정
+            success: (res) => {
+              const kakao_account = res.kakao_account; // account 정보 가져오기
+              console.log(kakao_account);
+            },
+          });
+        },
+      });
+    }
+  </script>
+
+  <!-- //네이버 로그인 버튼 노출 영역 -->
+  <script type="text/javascript">
+    var naver_id_login = new naver_id_login(
+      'key 입력',
+      'http://junhyeonpark.dothome.co.kr/Daegu-Arboretum/naver_Login/naver_callback.html'
+    );
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton('white', 3, 50);
+    naver_id_login.setDomain('http://junhyeonpark.dothome.co.kr/Daegu-Arboretum');
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.toggleBtn').click(function () {
+        $('#toggle-menu,.page_cover,html').addClass('open');
+        window.location.hash = '#open';
+      });
+    });
+
+    window.onhashchange = function () {
+      if (location.hash != '#open') {
+        $('#toggle-menu,.page_cover,html').removeClass('open');
+      }
+    };
+
+    $(document).ready(function () {
+      $('#toggle-menu ul.sub_mobile').hide();
+      $('#toggle-menu ul.nav li').click(function () {
+        $('ul', this).slideToggle('fast');
+      });
+    });
+  </script>
+</body>
+
+</html>
