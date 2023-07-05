@@ -397,6 +397,7 @@ html.open {
   justify-content: center;
 }
 
+/* 세윤 */
 .section-title-container img {
   width: 70px;
 }
@@ -614,8 +615,9 @@ table tr {
 .sns-gallery .profile-name {
   /* padding: 20px; */
   margin: 30px 0;
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: 2.3rem;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .instagram-profile {
@@ -648,14 +650,14 @@ table tr {
   /* text-indent: 10px; */
   text-align: center;
   padding: 0 15% 20px 0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: 'Nanum Gothic';
   /* width: 26%; */
   font-size: 1.5rem;
 }
 
 .account-info-number {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -698,6 +700,7 @@ table tr {
 
 .operation-info p {
   /* color: rgb(112, 108, 108, 0.9); */
+  line-height: 30px;
 }
 
 .operation-info2 {
@@ -709,6 +712,7 @@ table tr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 250px;
   /* margin-right: 8%; */
 }
 
@@ -719,8 +723,7 @@ table tr {
 
 .profile-img-wrapper img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 80%;
   margin-bottom: 10px;
 }
 
@@ -1055,7 +1058,7 @@ footer #bLine #footer_foline {
 .top-btn-wrapper:hover {
   opacity: 80%;
 }
-
+/* 세윤 */
 .top-btn-wrapper img {
   width: 85px;
 }
@@ -1173,9 +1176,9 @@ footer #bLine #footer_foline {
   .map-info-wrapper {
     padding-left: 20px;
   }
-
+/* 세윤 */
   .section-title-container img {
-    width: 30px;
+    width: 50px;
   }
 
   .text_box {
@@ -1250,8 +1253,13 @@ footer #bLine #footer_foline {
   body {
     position: relative;
   }
-
-
+/* 세윤 */
+  .profile-img-wrapper h2 {
+    display: none;
+}
+.account-info-wrapper2 {
+    gap: 40px;
+}
 
   .top-btn-wrapper {
     width: 55px;
@@ -1443,16 +1451,26 @@ footer #bLine #footer_foline {
   h2.section-title {
     font-size: 22px;
   }
+/* 세윤 */
+  .section-title-container img {
+    width: 32px;
+}
 
-
+}
+/* 세윤 */
+@media (max-width: 600px) {
+    .account-info-wrapper2 {
+        gap: 5px;
 }
 
 @media (max-width: 500px) {
   .guide-map {
     padding-top: 40px;
   }
-
-
+/* 세윤 */
+  .account-info-wrapper2 {
+    gap: 5px;
+}
 
   .review-registration-btn {
     font-size: 0.8rem;

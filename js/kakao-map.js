@@ -1,5 +1,4 @@
 if (kakao.maps) {
-
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     mapOption = {
       center: new kakao.maps.LatLng(35.79893470858549, 128.52342202498397), // 지도의 중심좌표
