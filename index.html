@@ -1,764 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>대구수목원</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대구수목원</title>
 
-    <!-- style.css -->
-    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
 
-    <!-- 제이쿼리 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- 폰트어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- typing animation -->
-    <script src="./js/typing-animation.js" defer></script>
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- guide map -->
-    <script src="./js/guide-map.js" defer></script>
+  <!-- typing animation -->
+  <script src="./js/typing-animation.js" defer></script>
 
-    <!-- kakao map -->
-    <!-- <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=604450d7333437c8244b0af60425b510"
-    ></script>
-    <script src="./js/kakao-map.js" defer></script> -->
+  <!-- guide map -->
+  <script src="./js/guide-map.js" defer></script>
 
-    <!-- swiper -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="./js/swiper.js" defer></script>
-  </head>
-  <body>
-    <!-- top btn -->
-    <div class="top-btn-wrapper">
-      <img src="./img/top-btn.png" alt="" />
-      <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
+
+  <!-- swiper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="./js/swiper.js" defer></script>
+</head>
+
+<body>
+  <!-- top btn -->
+  <div class="top-btn-wrapper">
+    <img src="./img/top-btn.png" alt="" />
+    <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
+  </div>
+
+  <!-- reservation btn -->
+  <a class="reservation-btn" href="./reservation.html">
+    <img src="./img/reservation-btn.png" alt="" />
+  </a>
+
+  <div class="header-wrapper">
+    <div class="gnb">
+      <div class="login"><a href="./login.html">로그인</a></div>
+      <div class="eng"><a href="#">ENGLISH</a></div>
     </div>
+  </div>
 
-    <!-- reservation btn -->
-    <a class="reservation-btn" href="./reservation.html">
-      <img src="./img/reservation-btn.png" alt="" />
-    </a>
-
+  <header>
     <div class="header-wrapper">
-      <div class="gnb">
-        <div class="login"><a href="./login.html">로그인</a></div>
-        <div class="eng"><a href="#">ENGLISH</a></div>
-      </div>
-    </div>
+      <div class="logo">
+        <a class="home-link" href="#">
+          <img src="./img/logo.PNG" class="logo-img" alt="" />
+          <div class="logo-title">
+            <h1>대구수목원</h1>
+            <p>Daegu National Arboretum</p>
+          </div>
+        </a>
+        <ul class="menu">
+          <li>수목원 안내</li>
+          <li>산림문화전시관</li>
+          <li>교육/연구 내용</li>
+          <li>목재문화체험장</li>
+          <li>나무병원</li>
+          <li>양묘화훼</li>
+          <li><a href="./reservation.html">견학/체험</a></li>
+        </ul>
+        <div class="toggleBtn"></div>
+        <div onclick="history.back();" class="page_cover"></div>
 
-    <header>
-      <div class="header-wrapper">
-        <div class="logo">
-          <a class="home-link" href="#">
-            <img src="./img/logo.PNG" class="logo-img" alt="" />
-            <div class="logo-title">
-              <h1>대구수목원</h1>
-              <p>Daegu National Arboretum</p>
-            </div>
-          </a>
-          <ul class="menu">
-            <li>수목원 안내</li>
-            <li>산림문화전시관</li>
-            <li>교육/연구 내용</li>
-            <li>목재문화체험장</li>
-            <li>나무병원</li>
-            <li>양묘화훼</li>
-            <li><a href="./reservation.html">견학/체험</a></li>
+        <div id="toggle-menu">
+          <ul class="nav">
+            <li>
+              <a>수목원 안내</a>
+              <ul class="sub_mobile">
+                <li><a href="#">수목원이란?</a></li>
+                <li><a href="#">공원과의 차이점</a></li>
+                <li><a href="#">조성목적 및 연혁</a></li>
+                <li><a href="#">조성과정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>산림문화전시관</a>
+              <ul class="sub_mobile">
+                <li><a href="#">개요</a></li>
+                <li><a href="#">전시실안내</a></li>
+                <li><a href="#">전시실배치도</a></li>
+              </ul>
+            </li>
+            <li><a href="#">교육/연구내용</a></li>
+            <li>
+              <a>목재문화체험장</a>
+              <ul class="sub_mobile">
+                <li><a href="#">체험관소개</a></li>
+                <li><a href="#">체험프로그램 안내</a></li>
+                <li><a href="#">시설안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#">나무병원</a></li>
+            <li>
+              <a>양묘화훼</a>
+              <ul class="sub_mobile">
+                <li>
+                  <a>양묘</a>
+                  <ol>
+                    <li><a>생산목적 및 현황</a></li>
+                    <li><a>생산수종</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a>화훼</a>
+                  <ol>
+                    <li><a href="#">생산 목적 및 현황</a></li>
+                    <li><a href="#">계절별 생산수종</a></li>
+                    <li><a href="#">국화전시회</a></li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <div class="toggleBtn"></div>
-          <div onclick="history.back();" class="page_cover"></div>
-
-          <div id="toggle-menu">
-            <ul class="nav">
-              <li>
-                <a>수목원 안내</a>
-                <ul class="sub_mobile">
-                  <li><a href="#">수목원이란?</a></li>
-                  <li><a href="#">공원과의 차이점</a></li>
-                  <li><a href="#">조성목적 및 연혁</a></li>
-                  <li><a href="#">조성과정</a></li>
-                </ul>
-              </li>
-              <li>
-                <a>산림문화전시관</a>
-                <ul class="sub_mobile">
-                  <li><a href="#">개요</a></li>
-                  <li><a href="#">전시실안내</a></li>
-                  <li><a href="#">전시실배치도</a></li>
-                </ul>
-              </li>
-              <li><a href="#">교육/연구내용</a></li>
-              <li>
-                <a>목재문화체험장</a>
-                <ul class="sub_mobile">
-                  <li><a href="#">체험관소개</a></li>
-                  <li><a href="#">체험프로그램 안내</a></li>
-                  <li><a href="#">시설안내</a></li>
-                </ul>
-              </li>
-              <li><a href="#">나무병원</a></li>
-              <li>
-                <a>양묘화훼</a>
-                <ul class="sub_mobile">
-                  <li>
-                    <a>양묘</a>
-                    <ol>
-                      <li><a>생산목적 및 현황</a></li>
-                      <li><a>생산수종</a></li>
-                    </ol>
-                  </li>
-                  <li>
-                    <a>화훼</a>
-                    <ol>
-                      <li><a href="#">생산 목적 및 현황</a></li>
-                      <li><a href="#">계절별 생산수종</a></li>
-                      <li><a href="#">국화전시회</a></li>
-                    </ol>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div onclick="history.back();" class="close"></div>
-            <div class="toggle-title">MENU</div>
-          </div>
+          <div onclick="history.back();" class="close"></div>
+          <div class="toggle-title">MENU</div>
         </div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <video src="./img/video.mp4" autoplay muted loop playsinline></video>
-    </section>
-
-    <div class="overlay"></div>
-
-    <div class="text_box_wrapper">
-      <div class="text_box">
-        <span class="text"></span>
-        <span class="blink">|</span>
       </div>
     </div>
+  </header>
 
-    <div class="reservation-btn2">
-      <a class="reservation-btn2-wrapper" href="./reservation.html">
-        <h3>견학/체험 예약</h3>
-        <img src="./img/calender.png" alt="" />
-      </a>
+  <section class="hero">
+    <video src="./img/video.mp4" autoplay muted loop playsinline></video>
+  </section>
+
+  <div class="overlay"></div>
+
+  <div class="text_box_wrapper">
+    <div class="text_box">
+      <span class="text"></span>
+      <span class="blink">|</span>
     </div>
+  </div>
 
-    <!-- guide map -->
-    <section class="guide-map">
-      <div class="container">
-        <div class="section-title-container">
-          <img src="./img/leaf_1.png" alt="" />
-          <h2 class="section-title">수목원안내도</h2>
-        </div>
-      </div>
+  <div class="reservation-btn2">
+    <a class="reservation-btn2-wrapper" href="./reservation.html">
+      <h3>견학/체험 예약</h3>
+      <img src="./img/calender.png" alt="" />
+    </a>
+  </div>
 
-      <div class="guide-map-container">
-        <div class="guide-map-img-wrapper">
-          <img class="guide-map-img" src="./img/guidemap.jpg" alt="" />
-        </div>
-
-        <div class="map-info-container">
-          <select name="" id="map-number" onchange="selectNumber(this.value)">
-            <!-- <option disabled selected value="null">
-              지도 상의 번호를 선택해주세요.
-            </option> -->
-            <option value="0" selected>1. 활엽수원</option>
-            <option value="1">2. 습지원</option>
-            <option value="2">3. 약용 식물원</option>
-            <option value="3">4. 매화원</option>
-            <option value="4">5. 분재원</option>
-            <option value="5">6. 향토식물원</option>
-            <option value="6">7. 외국식물원</option>
-            <option value="7">8. 기념식수원</option>
-            <option value="8">9. 방향식물원</option>
-            <option value="9">10. 괴석원</option>
-            <option value="10">11. 양치식물원</option>
-            <option value="11">12. 죽림원</option>
-            <option value="12">13. 철쭉원</option>
-            <option value="13">14. 염료식물원</option>
-            <option value="14">15. 유실수원</option>
-            <option value="15">16. 무궁화원</option>
-            <option value="16">17. 시화원</option>
-            <option value="17">18. 시목원</option>
-            <option value="18">19. 화목원</option>
-            <option value="19">20. 야생초화원</option>
-            <option value="20">21. 침엽수원</option>
-            <option value="21">22. 선인장·다육식물원</option>
-            <option value="22">23. 열대과일원</option>
-            <option value="23">24. 종교관련식물원</option>
-            <option value="24">25. 전통정원</option>
-            <option value="25">26. 잔디광장</option>
-            <option value="26">27. 목재문화체험장</option>
-            <option value="27">28. 교육관</option>
-            <option value="28">29. 산림문화전시관</option>
-            <option value="29">30. 숲길</option>
-            <option value="30">31. 분경원</option>
-          </select>
-
-          <div class="map-info">
-            <div class="map-info-img-wrapper">
-              <img src="" alt="" />
-            </div>
-            <div class="map-info-wrapper">
-              <h3 class="map-info-title"></h3>
-              <p class="map-info-text"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sns gallery -->
-    <section class="sns-gallery">
+  <!-- guide map -->
+  <section class="guide-map">
+    <div class="container">
       <div class="section-title-container">
         <img src="./img/leaf_1.png" alt="" />
-        <h2 class="section-title">SNS 갤러리</h2>
+        <h2 class="section-title">수목원안내도</h2>
+      </div>
+    </div>
+
+    <div class="guide-map-container">
+      <div class="guide-map-img-wrapper">
+        <img class="guide-map-img" src="./img/guidemap.jpg" alt="" />
       </div>
 
-      <div class="gallery-border">
-        <div class="container">
-          <h3 class="profile-name">daeguarboretum</h3>
+      <div class="map-info-container">
+        <select name="" id="map-number" onchange="selectNumber(this.value)">
+          <!-- <option disabled selected value="null">
+              지도 상의 번호를 선택해주세요.
+            </option> -->
+          <option value="0" selected>1. 활엽수원</option>
+          <option value="1">2. 습지원</option>
+          <option value="2">3. 약용 식물원</option>
+          <option value="3">4. 매화원</option>
+          <option value="4">5. 분재원</option>
+          <option value="5">6. 향토식물원</option>
+          <option value="6">7. 외국식물원</option>
+          <option value="7">8. 기념식수원</option>
+          <option value="8">9. 방향식물원</option>
+          <option value="9">10. 괴석원</option>
+          <option value="10">11. 양치식물원</option>
+          <option value="11">12. 죽림원</option>
+          <option value="12">13. 철쭉원</option>
+          <option value="13">14. 염료식물원</option>
+          <option value="14">15. 유실수원</option>
+          <option value="15">16. 무궁화원</option>
+          <option value="16">17. 시화원</option>
+          <option value="17">18. 시목원</option>
+          <option value="18">19. 화목원</option>
+          <option value="19">20. 야생초화원</option>
+          <option value="20">21. 침엽수원</option>
+          <option value="21">22. 선인장·다육식물원</option>
+          <option value="22">23. 열대과일원</option>
+          <option value="23">24. 종교관련식물원</option>
+          <option value="24">25. 전통정원</option>
+          <option value="25">26. 잔디광장</option>
+          <option value="26">27. 목재문화체험장</option>
+          <option value="27">28. 교육관</option>
+          <option value="28">29. 산림문화전시관</option>
+          <option value="29">30. 숲길</option>
+          <option value="30">31. 분경원</option>
+        </select>
 
-          <div class="instagram-profile-container">
-            <div class="instagram-profile">
-              <div class="profile-img-wrapper">
-                <img src="./img/instagram_profile_img.webp" alt="" />
-                <h2>대구 수목원</h2>
-                <div class="account-info-wrapper2">
-                  <div class="account-info">
-                    <p class="account-info-number">59</p>
-                    <p>게시물</p>
-                  </div>
-                  <div class="account-info">
-                    <p class="account-info-number">1007</p>
-                    <p>팔로워</p>
-                  </div>
-                  <div class="account-info">
-                    <p class="account-info-number">70</p>
-                    <p>팔로워</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="profile">
-                <div class="account-info-wrapper">
-                  <div class="account-info">
-                    <p class="account-info-number">59</p>
-                    <p>게시물</p>
-                  </div>
-                  <div class="account-info">
-                    <p class="account-info-number">1007</p>
-                    <p>팔로워</p>
-                  </div>
-                  <div class="account-info">
-                    <p class="account-info-number">70</p>
-                    <p>팔로워</p>
-                  </div>
-                </div>
-
-                <div class="operation-info">
-                  <p>
-                    🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00
-                    ~ 19:00)
-                  </p>
-                  <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
-                  <p>
-                    &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
-                    <br />
-                    &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말
-                    발표)
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="operation-info2">
-              <h3 class="profile-sub-name">&nbsp; 대구수목원</h3>
-              <p>
-                🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00 ~
-                19:00)
-              </p>
-              <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
-              <p>
-                &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
-                <br />
-                &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말 발표)
-              </p>
-            </div>
+        <div class="map-info">
+          <div class="map-info-img-wrapper">
+            <img src="" alt="" />
           </div>
-
-          <div class="grid-container">
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_1.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_2.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_3.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_4.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_5.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_6.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_7.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_8.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item-wrapper">
-              <div class="grid-item">
-                <img src="./img/instagram_picture_9.png" alt="" />
-              </div>
-            </div>
+          <div class="map-info-wrapper">
+            <h3 class="map-info-title"></h3>
+            <p class="map-info-text"></p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- review carrousel -->
-    <section class="review">
-      <div class="section-title-container review-container">
-        <img src="./img/leaf_1.png" alt="" />
-        <h2 class="section-title">대구 수목원 Review</h2>
-      </div>
+  <!-- sns gallery -->
+  <section class="sns-gallery">
+    <div class="section-title-container">
+      <img src="./img/leaf_1.png" alt="" />
+      <h2 class="section-title">SNS 갤러리</h2>
+    </div>
 
-      <div class="review-registration-btn">
-        <button>리뷰 등록하기 &#10003;</button>
-      </div>
-
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img1.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img1.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">김OO</p>
-                    <p class="posting-date">13일 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                수목원 입구 진입할 때 부터 양갈래로 풀과 나무들이 빼곡히 자리
-                하고 있었습니다. 주차공간도 잘 되어 있었고요 무엇보다 볼거리가
-                많았습니다. 대구에 들리신다면 한번 들려보세요.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img2.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img2.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">이OO</p>
-                    <p class="posting-date">20일 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                입장료가 무료인데도 불구하고 기대 이상으로 관경이 아주
-                아름다웠습니다. 관리도 잘되어 있고 다양한 식물들을 한 번에 볼 수
-                있다는 것이 가장 큰 매리트인 것 같아요. 내년 봄에 다시 오고
-                싶습니다!
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img3.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img3.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">윤OO</p>
-                    <p class="posting-date">25일 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                쓰레기 매립장이였다는게 믿지 않을 만큼 아름다운 수목원이네요.
-                어른들은 당연히 좋아할 것 같고 데이트 장소로도 안성맞춤 입니다.
-                내년엔 어머니가 아니라 여자친구와..함께! 방문할 수 있기를
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img4.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img4.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">이OO</p>
-                    <p class="posting-date">29일 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                바람쐴 겸 나들이 가기 좋았습니다. 천천히 둘러보기 좋으니 약간의
-                음식과 음료, 물을 꼭 챙겨 가시고 쓰레기는 꼭 챙겨나옵시다.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img5.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img5.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">박OO</p>
-                    <p class="posting-date">1달 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                이곳은 인위적으로 가꾸어지지 않은 듯 세심하게 가꾸어 지는
-                듯합니다. 또한 당신이 가족과 함께 휴식하시기에 아주 좋은 장소와
-                환경들을 제공해 줄 겁니다.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="review-img-wrapper">
-              <img src="./img/review-img6.png" alt="" />
-            </div>
-            <div class="review-text">
-              <div class="review-profile">
-                <div class="avatar-container">
-                  <div class="avatar-img-wrapper">
-                    <img src="./img/profile-img6.png" width="80px" alt="" />
-                  </div>
-                  <div class="avatar-info-wrapper">
-                    <p class="avatar-name">정OO</p>
-                    <p class="posting-date">2달 전에</p>
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                  <img src="./img/star.png" alt="" />
-                </div>
-              </div>
-              <p class="review-paragraph">
-                대구수목원은 산책도 하고 온실에서 과실, 종교관련식물, 열대식물,
-                난대식물, 분재원 등과 테마별 정원이 꾸며져 있어서 볼거리와
-                즐길거리로 좋아요. 어느덧 봄이 찾아오고 있네요.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <div class="swiper-button-play"></div>
-        <div class="swiper-button-pause disabled"></div>
-      </div>
-    </section>
-
-    <!-- kakao map -->
-    <!-- <section class="kakao-map">
+    <div class="gallery-border">
       <div class="container">
-        <div class="section-title-container">
-          <img src="./img/leaf_1.png" alt="" />
-          <h2 class="section-title">찾아오시는 길</h2>
-        </div>
-        <a href="http://kko.to/uuZxKbnZ19" target="_blank">
-          <div
-            id="map"
-            style="width: 90%; height: 65vh; border-radius: 10px"
-          ></div>
-        </a> -->
+        <h3 class="profile-name">daeguarboretum</h3>
 
-        <p class="adress">
-          <img
-            src="./img/leaf_2.png"
-            width="15px"
-            alt=""
-            style="background-color: #f3f8f2"
-          /><strong>주소</strong>: 대구광역시 달서구 화암로 342 (대곡동 284번지)
-          (우) 42829
-        </p>
+        <div class="instagram-profile-container">
+          <div class="instagram-profile">
+            <div class="profile-img-wrapper">
+              <img src="./img/instagram_profile_img.webp" alt="" />
+              <h2>대구 수목원</h2>
+              <div class="account-info-wrapper2">
+                <div class="account-info">
+                  <p class="account-info-number">59</p>
+                  <p>게시물</p>
+                </div>
+                <div class="account-info">
+                  <p class="account-info-number">1007</p>
+                  <p>팔로워</p>
+                </div>
+                <div class="account-info">
+                  <p class="account-info-number">70</p>
+                  <p>팔로워</p>
+                </div>
+              </div>
+            </div>
 
-        <div class="transport-info-btn" onclick="showTransportInfo()">
-          교통안내 더보기 &nbsp; &#10003;
-        </div>
+            <div class="profile">
+              <div class="account-info-wrapper">
+                <div class="account-info">
+                  <p class="account-info-number">59</p>
+                  <p>게시물</p>
+                </div>
+                <div class="account-info">
+                  <p class="account-info-number">1007</p>
+                  <p>팔로워</p>
+                </div>
+                <div class="account-info">
+                  <p class="account-info-number">70</p>
+                  <p>팔로워</p>
+                </div>
+              </div>
 
-        <div id="table">
-          <div class="table_1">
-            <h3><span>&bull;</span> 시내버스</h3>
-            <table border="1">
-              <th>정류소</th>
-              <th>버스노선</th>
-              <th>수목원 정문까지 소요시간</th>
-              <tr>
-                <!-- 첫번째 줄 시작 -->
-                <td>대진중고등학교앞</td>
-                <td>달서3,달서5</td>
-                <td>도보로 5분 정도</td>
-              </tr>
-              <!-- 첫번째 줄 끝 -->
-              <tr>
-                <!-- 두번째 줄 시작 -->
-                <td>대진중고등학교건너</td>
-                <td>달서3,달서5</td>
-                <td>도보로 5분 정도</td>
-              </tr>
-              <!-- 두번째 줄 끝 -->
-              <tr>
-                <td>정부대구지방합동청사후문</td>
-                <td>달서5</td>
-                <td>도보로 7분 정도</td>
-              </tr>
-              <tr>
-                <td>정부대구지방합동청사건너</td>
-                <td>달서3</td>
-                <td>도보로 7분 정도</td>
-              </tr>
-              <tr>
-                <td>정부대구지방합동청사앞</td>
-                <td>달서3</td>
-                <td>도보로 7분 정도</td>
-              </tr>
-              <tr>
-                <td>삼성래미안1차앞</td>
-                <td>
-                  600, 653, 급행7, 급행8, 달서1, 달서5, 성서1, 성서1-1, 성서2
-                </td>
-                <td>도보로 15분 정도</td>
-              </tr>
-              <tr>
-                <td>삼성래미안1차건너</td>
-                <td>653, 급행7, 급행8, 달서1, 성서2</td>
-                <td>도보로 15분 정도</td>
-              </tr>
-            </table>
-          </div>
-          <div class="table_2">
-            <h3><span>&bullet;</span> 지하철</h3>
-            <ul>
-              <li>1호선 대곡역 3번출구에서 도보로 25분 정도</li>
-              <li>
-                1호선 대곡역 2번출구에서 대곡역(한라하우젠트 건너)정류장으로
-                도보 이동 후 달서5번 환승하여 정부합동청사후문(1개 정류장, 2분)
-                혹은 대진중고등학교건너 정류장(2개 정류장, 4분)에 하차 후 도보로
-                7분 정도
-              </li>
-            </ul>
-          </div>
-          <div class="table_3">
-            <h3><span>&bullet;</span> 승용차</h3>
-            <table border="1">
-              <th colspan="3">고속도로로 오실 때</th>
-              <tr>
-                <td>구마고속도로, 화원IC<br />(서울, 부산, 기타)</td>
-                <td>
-                  대구방향(4km) → 지하철 1호선 대곡역(유천교)에서 우회전 →
-                  삼성레미안아파트 뒤 → 대구수목원
-                </td>
-              </tr>
-              <tr>
-                <td>북대구IC<br />(부산, 기타)</td>
-                <td>
-                  신천대로 → 상동교에서 우회전 → 앞산순환도로 → 상화로 → 유천교
-                  500m전반 (좌회전) → 삼성레미안아파트 뒤 → 대구수목원
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-wrapper">
-        <div id="aLine">
-          <div id="footer_fline">
-            <ul>
-              <li>
-                <a href="#"><strong>개인정보처리방침</strong></a>
-              </li>
-              <li><a href="#" class="pc">저작권정책</a></li>
-              <li><a href="#" class="pc">행정서비스 헌장</a></li>
-              <li><a href="#">뷰어다운로드</a></li>
-              <li><a href="#">관련기관</a></li>
-              <li><a href="#">전화번호(FAX)안내</a></li>
-              <li><a href="#" class="pc">공공앱소개</a></li>
-              <li><a href="#" class="pc">배너모음</a></li>
-              <li><a href="#" class="pc">XML</a></li>
-            </ul>
-          </div>
-          <div id="footer_sline">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-solid fa-blog"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <span><img src="./img/img_120.png" alt="120" width="100px" /></span>
-          </div>
-        </div>
-
-        <div id="bLine">
-          <div id="footer_tline">
-            <div><img src="./img/logo_footer.png" alt="logo_footer" /></div>
-            <div class="footer-adress">
-              <p>
-                동인청사 : (우 41911) 대구광역시 중구 공평로 88 /산격청사 : (우
-                41542) 대구광역시 북구 연암로 40 /전화번호 : 053)120,
-                053)803-0114
-              </p>
-              <p class="copyright">
-                © DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.
-              </p>
+              <div class="operation-info">
+                <p>
+                  🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00
+                  ~ 19:00)
+                </p>
+                <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
+                <p>
+                  &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
+                  <br />
+                  &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말
+                  발표)
+                </p>
+              </div>
             </div>
           </div>
 
-          <div id="footer_foline">
-            <span> <img src="./img/img_120.png" alt="120" /> </span>
-            <span> <img src="./img/img_wa.png" alt="wa" /> </span>
+          <div class="operation-info2">
+            <h3 class="profile-sub-name">&nbsp; 대구수목원</h3>
+            <p>
+              🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00 ~
+              19:00)
+            </p>
+            <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
+            <p>
+              &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
+              <br />
+              &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말 발표)
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_1.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_2.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_3.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_4.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_5.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_6.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_7.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_8.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item-wrapper">
+            <div class="grid-item">
+              <img src="./img/instagram_picture_9.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script>
-      const showTransportInfo = () => {
-        const table = document.querySelector('#table');
-        console.log(table);
-        table.classList.toggle('show');
-      };
-    </script>
+    </div>
+  </section>
 
-    <script>
-      $(document).ready(function () {
-        $('.toggleBtn').click(function () {
-          $('#toggle-menu,.page_cover,html').addClass('open');
-          window.location.hash = '#open';
-        });
+  <!-- review carrousel -->
+  <section class="review">
+    <div class="section-title-container review-container">
+      <img src="./img/leaf_1.png" alt="" />
+      <h2 class="section-title">대구 수목원 Review</h2>
+    </div>
+
+    <div class="review-registration-btn">
+      <button>리뷰 등록하기 &#10003;</button>
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img1.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img1.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">김OO</p>
+                  <p class="posting-date">13일 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              수목원 입구 진입할 때 부터 양갈래로 풀과 나무들이 빼곡히 자리
+              하고 있었습니다. 주차공간도 잘 되어 있었고요 무엇보다 볼거리가
+              많았습니다. 대구에 들리신다면 한번 들려보세요.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img2.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img2.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">이OO</p>
+                  <p class="posting-date">20일 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              입장료가 무료인데도 불구하고 기대 이상으로 관경이 아주
+              아름다웠습니다. 관리도 잘되어 있고 다양한 식물들을 한 번에 볼 수
+              있다는 것이 가장 큰 매리트인 것 같아요. 내년 봄에 다시 오고
+              싶습니다!
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img3.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img3.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">윤OO</p>
+                  <p class="posting-date">25일 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              쓰레기 매립장이였다는게 믿지 않을 만큼 아름다운 수목원이네요.
+              어른들은 당연히 좋아할 것 같고 데이트 장소로도 안성맞춤 입니다.
+              내년엔 어머니가 아니라 여자친구와..함께! 방문할 수 있기를
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img4.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img4.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">이OO</p>
+                  <p class="posting-date">29일 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              바람쐴 겸 나들이 가기 좋았습니다. 천천히 둘러보기 좋으니 약간의
+              음식과 음료, 물을 꼭 챙겨 가시고 쓰레기는 꼭 챙겨나옵시다.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img5.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img5.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">박OO</p>
+                  <p class="posting-date">1달 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              이곳은 인위적으로 가꾸어지지 않은 듯 세심하게 가꾸어 지는
+              듯합니다. 또한 당신이 가족과 함께 휴식하시기에 아주 좋은 장소와
+              환경들을 제공해 줄 겁니다.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-img-wrapper">
+            <img src="./img/review-img6.png" alt="" />
+          </div>
+          <div class="review-text">
+            <div class="review-profile">
+              <div class="avatar-container">
+                <div class="avatar-img-wrapper">
+                  <img src="./img/profile-img6.png" width="80px" alt="" />
+                </div>
+                <div class="avatar-info-wrapper">
+                  <p class="avatar-name">정OO</p>
+                  <p class="posting-date">2달 전에</p>
+                </div>
+              </div>
+              <div class="stars">
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+                <img src="./img/star.png" alt="" />
+              </div>
+            </div>
+            <p class="review-paragraph">
+              대구수목원은 산책도 하고 온실에서 과실, 종교관련식물, 열대식물,
+              난대식물, 분재원 등과 테마별 정원이 꾸며져 있어서 볼거리와
+              즐길거리로 좋아요. 어느덧 봄이 찾아오고 있네요.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-button-play"></div>
+      <div class="swiper-button-pause disabled"></div>
+    </div>
+  </section>
+
+  <!-- kakao map -->
+  <section class="kakao-map">
+    <div class="container">
+      <div class="section-title-container">
+        <img src="./img/leaf_1.png" alt="" />
+        <h2 class="section-title">찾아오시는 길</h2>
+      </div>
+      <a href="http://kko.to/uuZxKbnZ19" target="_blank">
+        <div id="map" style="width: 90%; height: 65vh; border-radius: 10px"></div>
+      </a>
+
+      <p class="adress">
+        <img src="./img/leaf_2.png" width="15px" alt="" style="background-color: #f3f8f2" /><strong>주소</strong>: 대구광역시
+        달서구
+        화암로 342 (대곡동 284번지)
+        (우) 42829
+      </p>
+
+      <div class="transport-info-btn" onclick="showTransportInfo()">
+        교통안내 더보기 &nbsp; &#10003;
+      </div>
+
+      <div id="table">
+        <div class="table_1">
+          <h3><span>&bull;</span> 시내버스</h3>
+          <table border="1">
+            <th>정류소</th>
+            <th>버스노선</th>
+            <th>수목원 정문까지 소요시간</th>
+            <tr>
+              <!-- 첫번째 줄 시작 -->
+              <td>대진중고등학교앞</td>
+              <td>달서3,달서5</td>
+              <td>도보로 5분 정도</td>
+            </tr>
+            <!-- 첫번째 줄 끝 -->
+            <tr>
+              <!-- 두번째 줄 시작 -->
+              <td>대진중고등학교건너</td>
+              <td>달서3,달서5</td>
+              <td>도보로 5분 정도</td>
+            </tr>
+            <!-- 두번째 줄 끝 -->
+            <tr>
+              <td>정부대구지방합동청사후문</td>
+              <td>달서5</td>
+              <td>도보로 7분 정도</td>
+            </tr>
+            <tr>
+              <td>정부대구지방합동청사건너</td>
+              <td>달서3</td>
+              <td>도보로 7분 정도</td>
+            </tr>
+            <tr>
+              <td>정부대구지방합동청사앞</td>
+              <td>달서3</td>
+              <td>도보로 7분 정도</td>
+            </tr>
+            <tr>
+              <td>삼성래미안1차앞</td>
+              <td>
+                600, 653, 급행7, 급행8, 달서1, 달서5, 성서1, 성서1-1, 성서2
+              </td>
+              <td>도보로 15분 정도</td>
+            </tr>
+            <tr>
+              <td>삼성래미안1차건너</td>
+              <td>653, 급행7, 급행8, 달서1, 성서2</td>
+              <td>도보로 15분 정도</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table_2">
+          <h3><span>&bullet;</span> 지하철</h3>
+          <ul>
+            <li>1호선 대곡역 3번출구에서 도보로 25분 정도</li>
+            <li>
+              1호선 대곡역 2번출구에서 대곡역(한라하우젠트 건너)정류장으로
+              도보 이동 후 달서5번 환승하여 정부합동청사후문(1개 정류장, 2분)
+              혹은 대진중고등학교건너 정류장(2개 정류장, 4분)에 하차 후 도보로
+              7분 정도
+            </li>
+          </ul>
+        </div>
+        <div class="table_3">
+          <h3><span>&bullet;</span> 승용차</h3>
+          <table border="1">
+            <th colspan="3">고속도로로 오실 때</th>
+            <tr>
+              <td>구마고속도로, 화원IC<br />(서울, 부산, 기타)</td>
+              <td>
+                대구방향(4km) → 지하철 1호선 대곡역(유천교)에서 우회전 →
+                삼성레미안아파트 뒤 → 대구수목원
+              </td>
+            </tr>
+            <tr>
+              <td>북대구IC<br />(부산, 기타)</td>
+              <td>
+                신천대로 → 상동교에서 우회전 → 앞산순환도로 → 상화로 → 유천교
+                500m전반 (좌회전) → 삼성레미안아파트 뒤 → 대구수목원
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div id="aLine">
+        <div id="footer_fline">
+          <ul>
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#" class="pc">저작권정책</a></li>
+            <li><a href="#" class="pc">행정서비스 헌장</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+            <li><a href="#">관련기관</a></li>
+            <li><a href="#">전화번호(FAX)안내</a></li>
+            <li><a href="#" class="pc">공공앱소개</a></li>
+            <li><a href="#" class="pc">배너모음</a></li>
+            <li><a href="#" class="pc">XML</a></li>
+          </ul>
+        </div>
+        <div id="footer_sline">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-solid fa-blog"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <span><img src="./img/img_120.png" alt="120" width="100px" /></span>
+        </div>
+      </div>
+
+      <div id="bLine">
+        <div id="footer_tline">
+          <div><img src="./img/logo_footer.png" alt="logo_footer" /></div>
+          <div class="footer-adress">
+            <p>
+              동인청사 : (우 41911) 대구광역시 중구 공평로 88 /산격청사 : (우
+              41542) 대구광역시 북구 연암로 40 /전화번호 : 053)120,
+              053)803-0114
+            </p>
+            <p class="copyright">
+              © DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+
+        <div id="footer_foline">
+          <span> <img src="./img/img_120.png" alt="120" /> </span>
+          <span> <img src="./img/img_wa.png" alt="wa" /> </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const showTransportInfo = () => {
+      const table = document.querySelector('#table');
+      console.log(table);
+      table.classList.toggle('show');
+    };
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.toggleBtn').click(function () {
+        $('#toggle-menu,.page_cover,html').addClass('open');
+        window.location.hash = '#open';
       });
+    });
 
-      window.onhashchange = function () {
-        if (location.hash != '#open') {
-          $('#toggle-menu,.page_cover,html').removeClass('open');
-        }
-      };
+    window.onhashchange = function () {
+      if (location.hash != '#open') {
+        $('#toggle-menu,.page_cover,html').removeClass('open');
+      }
+    };
 
-      $(document).ready(function () {
-        $('#toggle-menu ul.sub_mobile').hide();
-        $('#toggle-menu ul.nav li').click(function () {
-          $('ul', this).slideToggle('fast');
-        });
+    $(document).ready(function () {
+      $('#toggle-menu ul.sub_mobile').hide();
+      $('#toggle-menu ul.nav li').click(function () {
+        $('ul', this).slideToggle('fast');
       });
-    </script>
-  </body>
+    });
+  </script>
+
+  <!-- kakao map -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=604450d7333437c8244b0af60425b510"
+    async></script>
+  <script src="./js/kakao-map.js"></script>
+</body>
+
 </html>
