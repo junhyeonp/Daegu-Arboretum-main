@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+.top-btn-wrapper a img {
+    opacity: 80%;
+  width: 85px;
+}
+
+
 .hero {
   background: url('../img/sub-hero-img.jpg');
   height: 70vh;
@@ -27,6 +33,10 @@
 .section-title-container h2 {
   font-size: 55px;
   color: #706c6c;
+}
+
+.section-title-container img {
+    width: 40px;
 }
 
 .reservation-wrapper {
@@ -341,6 +351,8 @@
   #reserve .line-add {
     width: 60vw;
   }
+
+
 }
 
 @media (max-width: 1080px) {
@@ -361,6 +373,7 @@
     width: 30px;
     right: 5%;
   }
+
 }
 
 @media (max-width: 870px) {
@@ -400,6 +413,10 @@
     width: 25px;
     right: 5%;
   }
+
+  .section-title-container img {
+    width: 30px;
+}
 }
 
 @media (max-width: 500px) {
@@ -429,4 +446,8 @@
     width: 20px;
     right: 5%;
   }
+
+  .section-title-container img {
+    width: 20px;
+}
 }

@@ -29,6 +29,7 @@
   <script src="./js/guide-map.js" defer></script>
 
 
+
   <!-- swiper -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
@@ -39,7 +40,7 @@
 <body>
   <!-- top btn -->
   <div class="top-btn-wrapper">
-    <img src="./img/top-btn.png" alt="" />
+    <a href="#" style="cursor: pointer"><img src="./img/top-btn.png" alt="" /></a>
     <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
   </div>
 
@@ -88,6 +89,7 @@
                 <li><a href="#">조성과정</a></li>
               </ul>
             </li>
+            <li><a href="./reservation.html">견학/체험 예약</a></li>
             <li>
               <a>산림문화전시관</a>
               <ul class="sub_mobile">
@@ -147,12 +149,12 @@
     </div>
   </div>
 
-  <div class="reservation-btn2">
+  <!-- <div class="reservation-btn2">
     <a class="reservation-btn2-wrapper" href="./reservation.html">
       <h3>견학/체험 예약</h3>
       <img src="./img/calender.png" alt="" />
     </a>
-  </div>
+  </div> -->
 
   <!-- guide map -->
   <section class="guide-map">
@@ -269,14 +271,14 @@
 
               <div class="operation-info">
                 <p>
-                  🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00
+                  🌱 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp; &nbsp;5-8월 (9:00
                   ~ 19:00)
                 </p>
-                <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
-                <p>
-                  &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
+                <p>🌱 월요일은 온실 및 전시관 휴관입니다.</p><br>
+                <p class="operation-info-p">
+                  🌿 #대구수목원을 해시태그하여 '베스트 포토'에 선정된
                   <br />
-                  &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말
+                  &nbsp; &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말
                   발표)
                 </p>
               </div>
@@ -286,14 +288,14 @@
           <div class="operation-info2">
             <h3 class="profile-sub-name">&nbsp; 대구수목원</h3>
             <p>
-              🌿 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp;5-8월 (9:00 ~
+              🌱 관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00),<br>&nbsp; &nbsp; &nbsp; &nbsp;5-8월 (9:00 ~
               19:00)
             </p>
-            <p>🌿 월요일은 온실 및 전시관 휴관입니다.</p>
-            <p>
-              &bull; #대구수목원을 해시태그하여 '베스트 포토'에 선정된
+            <p>🌱 월요일은 온실 및 전시관 휴관입니다.</p><br>
+            <p class="operation-info2-p">
+              🌿 #대구수목원을 해시태그하여 '베스트 포토'에 선정된
               <br />
-              &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말 발표)
+              &nbsp; &nbsp; &nbsp; 3명에게 스타벅스 기프트콘을 증정합니다.(월말 발표)
             </p>
           </div>
         </div>
@@ -571,6 +573,10 @@
         화암로 342 (대곡동 284번지)
         (우) 42829
       </p>
+      <p class="adress-2">
+        <img src="./img/leaf_2.png" width="15px" alt="" style="background-color: #f3f8f2" />
+        <small>대구수목원 내 주차장이 구비되어 있으나 관람객이 많은 주말에는 대중교통을 이용해주시길 권장드립니다. </small>
+      </p>
 
       <div class="transport-info-btn" onclick="showTransportInfo()">
         교통안내 더보기 &nbsp; &#10003;
@@ -698,6 +704,7 @@
               41542) 대구광역시 북구 연암로 40 /전화번호 : 053)120,
               053)803-0114
             </p>
+
             <p class="copyright">
               © DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.
             </p>
@@ -744,7 +751,6 @@
   <!-- kakao map -->
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f9187d0627bfc3ffe8fabcacc9b70d89"></script>
   <script src="./js/kakao-map.js"></script>
-
 </body>
 
-</html
+</html>

@@ -503,9 +503,17 @@ section.kakao-map {
 
 .adress {
   font-size: 1.1rem;
-  padding: 30px 6%;
+padding: 0 6%;
+  padding-top: 30px;
   color: #444;
 }
+.adress-2 {
+    font-size: 1.1rem;
+  padding: 0 6%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #444;
+  }
 
 .adress img {
   margin-right: 5px;
@@ -707,6 +715,10 @@ table tr {
 .operation-info p {
   /* color: rgb(112, 108, 108, 0.9); */
   line-height: 30px;
+}
+
+.operation-info-p {
+font-size: 1.1em;
 }
 
 .operation-info2 {
@@ -1065,8 +1077,9 @@ footer #bLine #footer_foline {
   opacity: 80%;
 }
 
-/* 세윤 */
-.top-btn-wrapper img {
+
+.top-btn-wrapper a img {
+    opacity: 80%;
   width: 85px;
 }
 
@@ -1084,7 +1097,7 @@ footer #bLine #footer_foline {
   /* top: 15px; */
 }
 
-.top-btn-wrapper img {
+.top-btn-wrapper a img {
   /* position: fixed;
   bottom: 30px;
   right: 30px; */
@@ -1617,4 +1630,5 @@ footer #bLine #footer_foline {
     .section-title-container img {
       width: 25px;
     }
-  }
+}
+}
